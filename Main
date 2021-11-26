@@ -1,0 +1,30 @@
+package act13java;
+import java.util.*;
+
+public class Act13java {
+
+    public static void main(String[] args) {
+        
+        List nombresLista = new LinkedList<>();
+        Scanner Line = new Scanner(System.in);
+        String a;
+        
+        for(int i = 0; i < 6; i++){
+            
+            System.out.print("Nombre " + i +": ");
+            a = Line.next();
+            
+            nombresLista.add(a);
+        }
+        
+        System.out.println("");
+        Collections.sort(nombresLista);
+        
+        for(Object thisList : nombresLista){
+            
+            System.out.println(thisList);
+        }
+        
+    }
+    
+}
